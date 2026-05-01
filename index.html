@@ -3,35 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random User Fetch</title>
-    <link rel="stylesheet" href="src/lib/bootstrap.min.css">
+    <title>Person Profiler</title>
+
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <!-- User Card will go here -->
-            <div class="card">
-                <div class="card-body">
-                    <img id="student-image" class="card-img-top" alt="Student Image">
-                    <h5 id="user-name" class="card-title"></h5>
-                    <p id="user-email" class="card-text"></p>
-                </div>
-            </div>
-            <!-- "Next" Button -->
-            <button id="next-button" class="btn btn-primary mt-3">Next User</button>
+    <div class="container">
+        <div class="banner">
+            <h1 class="display">Person Profiler</h1>
+            <p class="leadmuted">Quickly look up a person from the built-in list.</p>
+            <p class="small">Enter a full name (for example: Drake)</p>
         </div>
+
+        <div class="finder">
+            <input type="text" id="query" class="formcontrol" placeholder="Enter person name">
+            <button id="findbtn" class=" btnprimary ">Search</button>
+        </div>
+
+        <div id="output"></div>
     </div>
-</div>
-
-<!-- bootstrap JS is included in src/js/bootstrap.min.js in this project -->
-<script src="src/js/bootstrap.min.js"></script>
-<script src="src/js/script.js"></script>
-
-</body>
-</html>
-</body>
-</html>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>
